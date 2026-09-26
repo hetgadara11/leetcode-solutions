@@ -3,8 +3,8 @@ class Solution {
         long sum=0;
         while(x!=0)
         {
-            int y=x%10;
-            sum=sum*10+y;
+            
+            sum=sum*10+x%10;
             x=x/10;
         }
         if(sum > Integer.MAX_VALUE || sum < Integer.MIN_VALUE)
